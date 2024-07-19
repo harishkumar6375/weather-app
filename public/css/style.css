@@ -1,0 +1,269 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Piazzolla:opsz@8..30&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Piazzolla', serif;
+   
+    
+
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+#navbarNav{
+    font-size: 18px;
+}
+
+.navbar{
+    background-color: #1e272e;
+    width: 100;
+}
+
+.navbar-brand i{
+    margin: 0 5px;
+    animation:rot 2s linear infinite;
+}
+
+@keyframes rot {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.main_header{
+  
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    
+    
+}
+
+.main_header_left{
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.main_header_left p{
+    margin-top: 7rem;
+    font-size: 2rem
+}
+
+.main_header_left h1{
+    font-size: 5rem;
+    text-transform: capitalize;  
+    margin: 1rem 0 4rem 0;  
+}
+
+h1 span{
+    color: #0097e6 ;
+}
+
+.main_header_left button{
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+footer{
+    height: 50px;
+    background-color: #1e272e;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.2rem;
+    margin-top: auto;
+}
+
+
+@media(max-width:768px) {
+    .main_header_left{
+        height: auto;
+        margin: 5rem 0;
+
+
+    }
+    
+}
+
+@media screen and (max-width:2560px) {
+    .main_header_left{
+        height: auto;
+        margin: 5rem 0;
+
+    }
+    
+}
+
+
+.main_header_left button:hover{
+    color: white;
+    background-color: #0097e6;
+}
+
+.main_header_left figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main_header_left figure img{
+    width: 600px;
+    margin-bottom: 30px;
+}
+
+
+
+/* weather page  */
+
+.temp_form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.temp_form input[type="text"]{
+   width:350px;
+   outline: none;
+   height: 40px;
+   position: absolute;
+   left: 30px;
+   background-color: transparent;
+   border: none;
+   color: #fff;
+}
+
+.temp_form input[type="submit"]{
+    width:90px;
+    outline: none;
+    height: 40px;
+    border: none;
+    position: absolute;
+    left: 500px;
+    border-radius: 50px;
+    color: #fff;
+    background-color:#0097e6;
+ }
+
+ ::placeholder{
+    color: rgb(174, 174, 187);
+ }
+
+ .temp_form input[type="submit"]:hover{
+    color: #0097e6;
+    background-color: #fff;
+ }
+
+.main_content{
+    display: flex;
+    margin-top: 50px;
+    width: 600px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #323544;
+}
+
+
+
+.tempInformation{
+    width: 400px;
+    height: 250px;
+    color: #fff;
+    background-color: #323544;
+    border-radius: 10px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.mx-auto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.top_layer{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-radius: 10px;
+    height: 60px;
+    background-color: #2d303d;
+}
+
+.main_layer p{
+    margin:10px 10px;
+}
+
+.middle_layer{
+    display: flex;
+    align-items: center;
+    font-size: 55px;
+    justify-content: space-around;
+    padding: 15px 0;
+}
+
+
+@media screen and (max-width:630px){
+    .main_content{
+        width: 290px;
+        height: 50px;
+    }
+
+    .temp_form input[type="text"]{
+        width:150px;
+        height: 40px;
+        position: absolute;
+        left: 30px;
+     }
+     
+     .temp_form input[type="submit"]{
+         width:90px;
+         height: 40px;
+         position: absolute;
+         left: 190px;
+      }
+}
+
+
+@media screen and (max-width:430px){
+    .tempInformation{
+        width: 290px;
+        height: 250px;
+        position: relative;
+    }
+    .middle_layer{
+        display: flex;
+        align-items: center;
+        font-size: 40px;
+        justify-content: space-around;
+    }
+}
+
+
+.data_hide{
+    display: none;
+}
